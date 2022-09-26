@@ -1,7 +1,7 @@
 # Unix_Shell
-This is my mini project for the course Operating Systems (Sem-IV)
+* This is my mini project for the course "Operating Systems" of semester-4 of B.E.
 
-The project simulates a UNIX shell and is written in C
+* The project simulates a UNIX shell and is written in C
 
 ## Background
 A Unix shell is a command-line interpreter (CLI) or shell that provides a command line user interface for Unix-like operating systems. The shell is both an interactive command language and a scripting language, and is used by the operating system to control the execution of the system using shell scripts. Users typically interact with a Unix shell using a terminal emulator; however, direct operation via serial hardware connections or Secure Shell are common for server systems. All Unix shells provide filename wildcarding, piping, command substitution, variables and control structures for condition-testing and iteration.
@@ -9,11 +9,11 @@ A Unix shell is a command-line interpreter (CLI) or shell that provides a comman
 The shell is the heart of the command-line interface, and thus is central to the Unix/C programming environment. Mastering use of the shell is necessary to become proficient in this world; knowing how the shell itself is built is the focus of this mini project. 
 
 ## Problem Statement
-The shell created here is very simple (conceptually): it runs in a while loop, repeatedly asking for input to tell it what command to execute. It then executes that command. The loop continues indefinitely, until the user types the built-in exit command. The shell can take as input arbitrarily long lines. Generally, the shell will be run in interactive mode, where the user types a command (one at a time) and the shell acts on it.
+The shell created here is very simple (conceptually): it runs in a while loop, repeatedly asking for input to tell it what command to execute. It then executes that command. The loop continues indefinitely, until the user types the built-in exit command. The shell can take arbitrarily long lines as input. Generally, the shell will run in interactive mode, where the user types a command (one at a time) and the shell acts on it.
 
 The shell also supports batch mode, in which it is given an input file of commands; in this case, the shell should not read user input but rather from this file to get the commands to execute.This goes on till the End Of File(EOF) marker is reached. If execv() is successful, it will not return anything; if it does return, there was an error (e.g., the command does not exist).
 
-The aim of the Mini Project is to implement a command line interpreter (CLI) or, as it is more commonly known, a shell. The shell operates in this basic way: when you type in a command (in response to its prompt), the shell creates a child process that executes the command you entered and then prompts for more user input when it has finished. The shell implemented is similar to, but simpler than, the one we run every day in Unix.
+The aim of the Mini Project is to implement a command line interpreter (CLI) or, as it is more commonly known, a shell. The shell operates in this basic way: when you type in a command when prompted, the shell creates a child process that executes the command you entered and then prompts for more user input when it has finished. The shell implemented is similar to, but simpler than, the one we run every day in Unix.
 
 ## Flow
 ![korn0701](https://user-images.githubusercontent.com/48092867/122667030-4f5e9980-d1ce-11eb-83b9-f93f843569ec.gif)
